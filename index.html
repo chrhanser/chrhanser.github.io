@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" type="text/css" media="print" href="Css/print.css" /> <!-- Ne pas oublier ca-->
+  <title>Christophe Hanser ~ Hello!</title>
+</head>
+
+<body>
+
+  <!-- Début Header-->
+
+  <div class="HEADER">
+    <img src="img/lac_1920x916.jpg" alt="Photo de Christophe Hanser avec un lac en fond">
+    <img src="img/pont_1920x916.jpg" alt="Photo de Christophe Hanser avec un fleuve et des falaises en fond">
+    <img src="img/meduses_1920x916.jpg" alt="Photo de Christophe Hanser avec un aquarium de méduses derrière">
+    <!--<img src="img/ville_1920x916.jpg" alt="Photo de Christophe Hanser à Séoul"> -->
+  </div>
+  <img src="img/ville_1920x916.jpg" alt="Photo de Christophe Hanser à Séoul" class="imgHeaderFixe">
+
+
+
+  <!-- Fin Header  -  Début navbar-->
+  <nav class="navbar navbar-expand-md sticky-top navbar-dark navbar-custom">
+    <a class="navbar-brand" href="#"><button type="button" class="btn btn-default btn-lg"> HOME ⬆</button></a>
+    <!-- HORS DU COLLAPSE, bouton home -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!--Accordéon-->
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- boutons qui collapsent lorsque navbar réduite -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><button type="button" class="btn btn-default btn-lg"> PRÉSENTATION</button></li>
+        <li class="nav-item"><button type="button" class="btn btn-default btn-lg"> COMPÉTENCES</button></li>
+        <li class="nav-item"><button type="button" class="btn btn-default btn-lg"> PROJETS</button></li>
+        <li class="nav-item"><button type="button" class="btn btn-default btn-lg"> CONTACT</button></li>
+      </ul>
+    </div> <!-- fin collapse -->
+  </nav>
+
+
+  <!-- fin navbar , début présentation-->
+
+  <div class="container rounded presentationMain">
+    <h2 class="presentation">Présentation</h2>
+    <p class="presentation lead"> <strong>Bonjour! </strong> <br></p>
+    <p class="presentation lead">Moi c'est Christophe, 24 ans, étudiant en informatique. J'habite Bordeaux, j'aime le
+      sport, dessiner et voyager. <br>
+      Avant l'informatique j'étais en immobilier, mais j'ai choisi de me réorienter.<br>
+      Cela m'aura toutefois permis de développer de nombreuses compétences, telles que le sens du relationnel, la
+      capacité à travailler en équipe,
+      à analyser les besoins des clients et à réaliser des projets. De plus, cela m’aura permis d’acquérir des bases
+      juridiques et économiques. <br>
+      Désormais étudiant à l'IUT d'informatique de Bordeaux, j'étends mon expérience et mon savoir-faire en informatique
+      aussi bien dans developpement web que logiciel.
+    </p>
+  </div>
+
+  <!-- fin présentation, début compétences-->
+
+  <div class="competences">
+    <table summary="Compétences">
+      <caption>
+        <h2> Compétences </h2>
+      </caption>
+      <tr>
+        <th scope="row"> Environnements:</th>
+        <td> UNIX </td>
+        <td>Windows</td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <th scope="row"> Langages de programmation:</th>
+        <td> Java </td>
+        <td>C</td>
+        <td>C#</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <th scope="row"> Technologies web:</th>
+        <td> HTML </td>
+        <td>CSS</td>
+        <td>Javascript</td>
+        <td>PHP</td>
+      </tr>
+      <tr>
+        <th scope="row"> Bases de données:</th>
+        <td> Oracle </td>
+        <td>SQL Server</td>
+        <td>MySQL</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <th scope="row">Langages et méthodes de modélisation:</th>
+        <td> UML </td>
+        <td>Merise/2</td>
+        <td>MS Project</td>
+        <td> Méthodes Agiles</td>
+      </tr>
+      <tr>
+        <th scope="row">Frameworks:</th>
+        <td> ASP.NET </td>
+        <td>Java EE</td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <th scope="row">Outils pour le génie logiciel: </th>
+        <td> Win’design</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <th scope="row">Langues parlées:</th>
+        <td> Francais courant</td>
+        <td> Anglais courant</td>
+        <td> Espagnol (B1)</td>
+        <td> </td>
+      </tr>
+    </table>
+  </div>
+  <!-- fin compétences, début diplomes-->
+
+  <div class="diplomes">
+    <table summary="diplomes">
+      <caption>
+        <h2> Diplômes </h2>
+      </caption>
+      <tr>
+        <td></td>
+        <th scope="col"> DUT Informatique</th>
+        <th scope="col"> Certification Google en marketing digital </th>
+        <th scope="col"> BTS Professions Immobilières</th>
+      </tr>
+      <tr>
+        <th scope="row" class="obtention"> Date d'obtention: </th>
+        <td> Prévue pour septembre 2020 </td>
+        <td> Décembre 2017</td>
+        <td> Juin 2019 </td>
+      </tr>
+
+    </table>
+  </div>
+  <!-- fin diplomes, début projets-->
+
+
+  <div class="projets container rounded">
+
+    <div class="row">
+
+      <div class="col-md-3 bitebite">
+        <div class="row"> <h2>Projets réalisés</h2> </div>
+        <div class="row"> <p><img src="img/jeuVie.gif" class="rounded" alt="jeu-de-la-vie-processing">"Jeu de la vie" codé sur Processing</p> </div>
+      </div>
+
+      <div class="col-md-3">
+          <p><img src="img/monBébé.jpg" class="rounded" alt="Dessin-fusée-Gimp">Dessin graphique réalisé sur Gimp</p>
+      </div>
+
+      <div class="col-md-6">
+        <p><img src="img/spaceInvaders.jpg" class="rounded" alt="space-invaders-java">Jeu de Space Invaders codé en Java</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- fin projets, début footer -->
+
+  <div class="container-fluid FOOTER">
+    <div class="row">
+      <div class="col-md-4 gauche">
+        <p> <strong> Données personnelles </strong><br>
+          Ce site ne stocke aucune donnée personnelle. <br>
+          <strong>Propriété intellectuelle </strong><br>
+          Ce site internet est la propriété de Christophe Hanser. Ce site est en outre une œuvre protégée par le droit
+          de la propriété intellectuelle. Il comporte des textes, images, photographies, illustrations, logos, eux-mêmes
+          protégés par des droits de propriétés industrielle et intellectuelle. L'usage par l'internaute de ce site est
+          strictement réservé à un usage privé, le droit d'utilisation par l'internaute étant limité à la consultation
+          des informations figurant sur le site. Toute utilisation, reproduction, téléchargement total ou partiel du
+          site, ou de l'un de ses éléments textes, images, photographies illustrations, logos sans l'accord de son
+          propriétaire ou du titulaire des droits est en conséquence interdite, à l'exception de la copie privée
+          réalisée à des fins personnelles et non commerciales. Toute infraction au présent article est susceptible
+          d'être pénalement et civilement sanctionnée, notamment au titre de la contrefaçon et entraînera le cas échéant
+          le versement de dommages et intérêts. </p>
+      </div>
+
+      <div class="col-md-4 milieu">
+        <h2>Contactez-moi !</h2>
+        <form>
+          <div class="form-group ">
+            <label for="Votre-nom">Nom</label>
+            <input type="text" class="form-control" placeholder="Votre nom">
+          </div>
+          <div class="form-group">
+            <label for="E-mail">E-mail</label>
+            <input type="email" class="form-control" placeholder="Votre mail" aria-describedby="SousMail">
+            <small id="SousMail" class="form-text text-muted">Votre mail ne sera jamais partagé, transmis ou
+              vendu</small>
+          </div>
+          <div class="form-group">
+            <label for="Zone-de-texte">Votre texte:</label>
+            <textarea class="form-control" rows="2"
+              placeholder="Attention, ce site est encore en construction. Pour toute demande de contact, préférez envoyer un mail directement à christophe.hanser suivi de @gmail.com"></textarea>
+          </div>
+          <!--<button type="button" class="btn btn-default">Envoyer</button> -->
+          <a class="btn btn-default" href="mailto:chrhanser@etu.u-bordeaux.fr" role="button">Envoyer</a>
+        </form>
+      </div>
+
+      <div class="col-md-4 droite">
+        <p><a href="https://www.facebook.com/christophe.hanser.7?ref=bookmarks" target="_blank"><img
+              src="img/logoFacebook.png" alt="Logo-de-Facebook"> Profil Facebook</a> </p>
+        <p><a href="https://www.linkedin.com/in/christophe-hanser/" target="_blank"><img src="img/logoLinkedin.png"
+              alt="Logo-de-LinkedIn"> Profil &nbsp; LinkedIn</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Nécesssaire pour le collapse de la navbar-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
