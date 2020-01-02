@@ -1,0 +1,276 @@
+/*
+STYLES GLOBAUX ( TITRE-PAGE, COULEUR DE FOND, ETC.)
+*/
+
+:root {
+  --time : 12s;
+}
+
+body{
+  background-color:#2c2f33;
+}
+
+h2{
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+/*HEADER*/
+
+.imgHeaderFixe{
+  width: 100%;
+}
+
+@keyframes AnimDuHeader{
+  0% {
+    opacity:1;
+  }
+  19% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  70% {
+    opacity: 0;
+  }
+  94% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.HEADER img {
+  animation-name: AnimDuHeader;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: var(--time) ;
+  position:absolute;
+  width: 100%;
+}
+
+.HEADER img:nth-of-type(1) {
+  animation-delay: calc(var(--time) /4 * 3);
+}
+.HEADER img:nth-of-type(2) {
+  animation-delay: calc(var(--time) /4 * 2);
+}
+.HEADER img:nth-of-type(3) {
+  animation-delay: calc(var(--time) /4) ;
+}
+/* FIN HEADER */
+
+/* NAVBAR */
+
+.navbar-custom {
+  background-color: #444444;
+}
+
+.navbar .btn-default{
+  color:#e0c134;
+  background-color: rgb(63, 63, 63);
+  border-color: rgb(105, 105, 105);
+  margin-left: 3em;
+  width: 15rem;
+  font-weight: bold;
+}
+
+.navbar .btn-default:hover{
+  background-color: #e0c134;
+  color:rgb(0, 0, 0);
+  border-color: black;
+  }
+/* FIN NAVBAR */
+
+/* PRESENTATION */
+h2.presentation{
+  padding-top: 30px;
+}
+
+p.presentation , h2.presentation{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.presentationMain{
+  background-color: rgb(233, 233, 233);
+  max-width: 2000px;
+  width: 70vw;
+  color: black;
+  padding: 30px;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+/* FIN PRESENTATION */
+
+/* COMPETENCES ET DIPLOMES*/
+.competences, .diplomes{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.competences table, .diplomes table{
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: large;
+}
+
+.competences table caption, .diplomes table caption{
+  caption-side: top;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #e0c134;
+}
+
+.competences table tr th{
+  background-color: rgb(92, 92, 92);
+  padding: 0px 2% 0px 2%;
+  font-size: 1.5rem;
+}
+
+.competences td{
+text-align: center;
+padding: 3%;
+-webkit-transition: all 0.7s;
+}
+
+.competences tr:nth-child(odd){
+  background-color: rgb(168, 168, 168);
+}
+
+.competences tr:nth-child(even){
+  background-color: rgb(199, 199, 199);
+}
+
+.competences td:hover{
+  background-color: rgb(87, 87, 87);
+}
+
+.competences th:hover{
+  background-color:#e0c134;
+  color: black;
+}
+
+.competences tr:hover{
+  background-color:rgb(114, 114, 114);
+  color: #e0c134;
+  border: 1px solid #e0c134;
+}
+
+.diplomes table tr{
+  background-color: rgb(119, 119, 119);
+}
+
+.diplomes table tr th, .diplomes table tr td{
+  padding:2% 5% 2% 5%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.diplomes table{
+  border-collapse: separate; 
+  border-spacing: 4px;
+}
+
+.diplomes td:empty{
+  visibility: hidden;
+}
+
+.diplomes table tr th.obtention{
+  text-align: center;
+  padding: 2%;
+}
+
+.diplomes table tr th, .diplomes table tr td{
+  -webkit-transition: all 0.8s;
+}
+
+.diplomes table tr th:hover,.diplomes table tr td:hover{
+  background: #e0c134;
+}
+
+/* FIN COMPETENCES ET DIPLOMES*/
+
+/*PROJETS*/
+
+.projets{
+  background-color: cornflowerblue;
+  max-width: 2000px;
+  width: 70vw;
+  color: black;
+  padding: 30px;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+
+}
+.projets h2{
+  /*text-align: center;*/
+  padding-bottom: 6rem;
+}
+
+.projets p img{
+  width: 100%;
+  transition : all 1s ease-in;
+}
+
+.projets p img:hover{
+  transform: scale(1.1)
+}
+
+.projets .row *{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*FIN PROJETS*/
+
+/* FOOTER */
+
+.FOOTER{
+  background-color: #e0c134;
+  color: black;
+  text-align: center;
+  overflow: auto;
+  padding-top: 2rem;
+}
+
+.FOOTER .milieu{
+padding-left: 1rem;
+padding-right: 1rem;
+}
+
+.FOOTER .btn-default{
+  color:#e0c134;
+  background-color: rgb(63, 63, 63);
+  border-color: rgb(105, 105, 105);
+  margin-left: 3em;
+  width: 15rem;
+  font-weight: bold;
+  margin-bottom:1rem;
+}
+
+.FOOTER .form-control{
+  background-color: #e4df84;
+}
+
+.FOOTER .droite, .FOOTER .gauche{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.FOOTER .droite img{
+  width: 7%;
+}
+
+.FOOTER .droite a {
+  text-decoration: none;
+  color: black;
+  font: 2em sans-serif;
+}
+/* FIN FOOTER */
