@@ -28,7 +28,7 @@
 
   <!-- Fin Header  -  Début navbar-->
   <nav class="navbar navbar-expand-md sticky-top navbar-dark navbar-custom">
-    <a class="navbar-brand" href="#"><button type="button" class="btn btn-default btn-lg"> HOME ⬆</button></a>
+    <a class="navbar-brand" href="#"> HOME ⬆</a>
     <!-- HORS DU COLLAPSE, bouton home -->
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -42,10 +42,10 @@
 
       <!-- boutons qui collapsent lorsque navbar réduite -->
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><button type="button" class="btn btn-default btn-lg"> PRÉSENTATION</button></li>
-        <li class="nav-item"><button type="button" class="btn btn-default btn-lg"> COMPÉTENCES</button></li>
-        <li class="nav-item"><button type="button" class="btn btn-default btn-lg"> PROJETS</button></li>
-        <li class="nav-item"><button type="button" class="btn btn-default btn-lg"> CONTACT</button></li>
+        <li class="nav-item"><a class="nav-link" href="#presentation"> PRÉSENTATION </a></li>
+        <li class="nav-item"><a class="nav-link" href="#competences"> COMPÉTENCES </a></li>
+        <li class="nav-item"><a class="nav-link" href="#projets"> PROJETS </a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"> CONTACT </a></li>
       </ul>
     </div> <!-- fin collapse -->
   </nav>
@@ -53,7 +53,7 @@
 
   <!-- fin navbar , début présentation-->
 
-  <div class="container rounded presentationMain">
+  <div class="container rounded presentationMain" id="presentation">
     <h2 class="presentation">Présentation</h2>
     <p class="presentation lead"> <strong>Bonjour! </strong> <br></p>
     <p class="presentation lead">Moi c'est Christophe, 24 ans, étudiant en informatique. J'habite Bordeaux, j'aime le
@@ -64,13 +64,13 @@
       à analyser les besoins des clients et à réaliser des projets. De plus, cela m’aura permis d’acquérir des bases
       juridiques et économiques. <br>
       Désormais étudiant à l'IUT d'informatique de Bordeaux, j'étends mon expérience et mon savoir-faire en informatique
-      aussi bien dans developpement web que logiciel.
+      aussi bien dans le developpement web que logiciel.
     </p>
   </div>
 
   <!-- fin présentation, début compétences-->
 
-  <div class="competences">
+  <div class="competences" id="competences" >
     <table summary="Compétences">
       <caption>
         <h2> Compétences </h2>
@@ -158,7 +158,7 @@
   <!-- fin diplomes, début projets-->
 
 
-  <div class="projets container rounded">
+  <div class="projets container rounded" id="projets" >
 
     <div class="row">
 
@@ -180,7 +180,7 @@
 
   <!-- fin projets, début footer -->
 
-  <div class="container-fluid FOOTER">
+  <div class="container-fluid FOOTER" id="contact" >
     <div class="row">
       <div class="col-md-4 gauche">
         <p> <strong> Données personnelles </strong><br>

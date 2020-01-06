@@ -6,6 +6,10 @@ STYLES GLOBAUX ( TITRE-PAGE, COULEUR DE FOND, ETC.)
   --time : 12s;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color:#2c2f33;
 }
@@ -68,20 +72,29 @@ h2{
   background-color: #444444;
 }
 
-.navbar .btn-default{
-  color:#e0c134;
+.navbar .navbar-nav .nav-item .nav-link ,.navbar .navbar-brand{
+  color: #e0c134;
   background-color: rgb(63, 63, 63);
-  border-color: rgb(105, 105, 105);
   margin-left: 3em;
   width: 15rem;
   font-weight: bold;
+  text-align: center;
+  border: 1px solid rgb(105, 105, 105);
+  border-radius: 12px;
 }
 
-.navbar .btn-default:hover{
+.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-brand:hover{
+  color:black;
   background-color: #e0c134;
-  color:rgb(0, 0, 0);
-  border-color: black;
-  }
+}
+
+.navbar li, .navbar-brand {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+
 /* FIN NAVBAR */
 
 /* PRESENTATION */
