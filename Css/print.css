@@ -6,17 +6,13 @@ p, h1, h2{
     color:black;
 }
 
-h2.presentation{
-    padding-top: 0px;
-}
-
 .presentationMain{
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.FOOTER *, .projets, .navbar, img{
+.FOOTER *, .projets, .navbar, img, h2.presentation, .presentationMain .noPrint, .diplomes table tr a{
     display: none;
 }
 
@@ -26,4 +22,8 @@ font-size: 1rem;
 
 .competences td, .diplomes td, .diplomes th, .diplomes table tr th.obtention{
     padding:0px;
+}
+
+.presentationMain .print{
+    display: unset;
 }

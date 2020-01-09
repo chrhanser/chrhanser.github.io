@@ -73,15 +73,11 @@ h2{
   background-color: #444444;
 }
 
-.navbar .navbar-nav .nav-item .nav-link ,.navbar .navbar-brand{
-  color: #e0c134;
-  background-color: rgb(63, 63, 63);
-  margin-left: 3em;
-  width: 15rem;
-  font-weight: bold;
-  text-align: center;
-  border: 1px solid rgb(105, 105, 105);
-  border-radius: 12px;
+#navbarSupportedContent .navbar-nav{
+display: flex;
+flex: 1;
+margin: auto;
+justify-content: space-around;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-brand:hover{
@@ -94,13 +90,16 @@ h2{
   font-size: 1.25rem;
   line-height: 1.5;
 }
-
-
 /* FIN NAVBAR */
 
 /* PRESENTATION */
+.presentationMain .print{
+  display: none;
+}
+
 h2.presentation{
   padding-top: 30px;
+  word-wrap: break-word;
 }
 
 p.presentation , h2.presentation{
@@ -121,6 +120,9 @@ p.presentation , h2.presentation{
 
 /* COMPETENCES ET DIPLOMES*/
 
+.competences table tr img,.diplomes table tr img{
+  width: 3rem;
+}
 
 .competences, .diplomes{
   display: flex;
@@ -142,7 +144,7 @@ p.presentation , h2.presentation{
 }
 
 .competences table tr th{
-  background-color: rgb(92, 92, 92);
+  background-color: #757575;
   padding: 0px 2% 0px 2%;
   font-size: 1.5rem;
 }
@@ -171,12 +173,12 @@ padding: 3%;
 }
 
 .competences tr:hover{
-  background-color:rgb(114, 114, 114);
+  background-color: rgb(105, 105, 105);
   color: #e0c134;
 }
 
 .diplomes table tr{
-  background-color: rgb(119, 119, 119);
+  background-color: #757575;
 }
 
 .diplomes table tr th, .diplomes table tr td{
@@ -203,8 +205,17 @@ padding: 3%;
   -webkit-transition: all 0.8s;
 }
 
-.diplomes table tr th:hover,.diplomes table tr td:hover{
-  background: #e0c134;
+.diplomes table tr th.Diplomes{
+  background-color: #e0c134;
+}
+
+.diplomes table tr td:hover{
+  background: #ffe367;
+}
+
+.diplomes table tr a{
+  color: white;
+  font-size: medium;
 }
 
 /* FIN COMPETENCES ET DIPLOMES*/
@@ -232,7 +243,7 @@ padding: 3%;
 }
 
 .projets p img:hover{
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .projets .row *{
@@ -255,6 +266,12 @@ padding: 3%;
   width: 100%;
 }
 
+.gauche{
+  display: flex;
+  justify-content: center;
+}
+
+
 .modal-open {
   overflow-y: auto;
 }
@@ -268,7 +285,6 @@ padding-right: 1rem;
   color:#e0c134;
   background-color: rgb(63, 63, 63);
   border-color: rgb(105, 105, 105);
-  margin-left: 3em;
   width: 15rem;
   font-weight: bold;
   margin-bottom:1rem;
