@@ -92,7 +92,7 @@
   <!-- fin présentation, début compétences-->
 
   <div class="competences" id="competences" >
-    <table summary="tableau-récapitulatif-de-mes-compétences">
+    <table>
       <caption>
         <h2> Compétences </h2>
       </caption>
@@ -157,7 +157,7 @@
   <!-- fin compétences, début diplomes-->
 
   <div class="diplomes">
-    <table summary="tableau-récapitulatif-de-mes-diplomes">
+    <table>
       <caption>
         <h2> Diplômes </h2>
       </caption>
@@ -224,8 +224,7 @@
               </button>
           
               <!-- Modal -->
-              <div class="modal fade" id="lesMentionsLegales" tabindex="-1" role="dialog" aria-labelledby="Liste-des-mentions-legales"
-                aria-hidden="true">
+              <div class="modal fade" id="lesMentionsLegales" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -286,18 +285,18 @@
         <h2>Contactez-moi !</h2>
         <form>
           <div class="form-group ">
-            <label for="Votre-nom">Nom</label>
-            <input type="text" class="form-control" placeholder="Votre nom">
+            <input type="text" id="Nom" class="form-control" placeholder="Votre nom">
+            <label for="Nom">Nom</label>
           </div>
           <div class="form-group">
+            <input type="text" class="form-control" id="E-mail" placeholder="Votre mail" aria-describedby="SousMail">
             <label for="E-mail">E-mail</label>
-            <input type="email" class="form-control" placeholder="Votre mail" aria-describedby="SousMail">
             <small id="SousMail" class="form-text text-muted">Votre mail ne sera jamais partagé, transmis ou
               vendu</small>
           </div>
           <div class="form-group">
             <label for="Zone-de-texte">Votre texte:</label>
-            <textarea class="form-control" rows="2"
+            <textarea class="form-control" rows="2" id="Zone-de-texte"
               placeholder="Attention, ce site est encore en construction. Pour toute demande de contact, préférez envoyer un mail directement à christophe.hanser suivi de @gmail.com"></textarea>
           </div>
           <a class="btn btn-default" href="mailto:chrhanser@etu.u-bordeaux.fr" role="button">Envoyer</a>
