@@ -20,11 +20,26 @@ p.majeur{
   font-weight: bold;  
 }
 
+
 @media screen and (max-width:900px) {
-  .competences, .diplomes{
+  .competences *, .diplomes *{
     display: none;
   }
+
+  #presentation, #projets{
+    width: 95vw;
+  }
+
+  .smartphone *{
+    display:unset !important;
+  }
+
+
 }
+
+
+
+
 /*HEADER*/
 
 .imgHeaderFixe{
@@ -140,6 +155,26 @@ p.presentation{
 /* FIN PRESENTATION */
 
 /* COMPETENCES ET DIPLOMES*/
+
+.smartphone *{
+  display: none;
+}
+
+.smartphone{
+  background-color: #e0c134;
+  display: flex;
+  flex-direction: column;
+}
+
+.smartphone .majeur{
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.smartphone a{
+  color: black;
+  text-decoration: underline;
+}
 
 .competences table tr img,.diplomes table tr img{
   width: 3rem;
