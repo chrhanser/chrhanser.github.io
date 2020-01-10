@@ -15,9 +15,9 @@ body{
   padding-right: 0px !important; /*Voir README*/
 }
 
-h2{
+p.majeur{
   font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
+  font-weight: bold;  
 }
 
 /*HEADER*/
@@ -90,21 +90,37 @@ justify-content: space-around;
   font-size: 1.25rem;
   line-height: 1.5;
 }
-/* FIN NAVBAR */
+
+.navbar-dark a.navbar-brand{
+  color:#e0c134;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color:#DEDEDE;
+}
+
+/* FIN NAVBAR */  
 
 /* PRESENTATION */
 .presentationMain .print{
   display: none;
 }
 
-h2.presentation{
+.presentationMain p.majeur{
   padding-top: 30px;
   word-wrap: break-word;
+  padding-bottom: 20px;
+  font-size: 3rem;
 }
 
-p.presentation , h2.presentation{
+p.presentation{
   margin-top: 20px;
   text-align: center;
+  line-height: 230%;
+}
+
+.presentationMain p.big{
+  font-size: 1.6rem;
 }
 
 .presentationMain{
@@ -141,6 +157,7 @@ p.presentation , h2.presentation{
   text-align: center;
   padding-bottom: 2rem;
   color: #e0c134;
+  font-size: 3rem;
 }
 
 .competences table tr th{
@@ -232,9 +249,9 @@ padding: 3%;
   margin-bottom: 8rem;
 
 }
-.projets h2{
-  /*text-align: center;*/
+.projets p.majeur{
   padding-bottom: 6rem;
+  font-size: 1.9rem;
 }
 
 .projets p img{
@@ -279,6 +296,10 @@ padding: 3%;
 .FOOTER .milieu{
 padding-left: 1rem;
 padding-right: 1rem;
+}
+
+.FOOTER .milieu p.majeur{
+  font-size: 2rem;
 }
 
 .FOOTER .btn-default{

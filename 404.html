@@ -20,9 +20,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
       
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Page non trouvée!</title>
@@ -30,29 +27,28 @@
 
 <body>
 
-
-        <nav class="navbar navbar-expand-md sticky-top navbar-dark navbar-custom">
-                <a class="navbar-brand mr-auto" href="https://chrhanser.github.io/#"> HOME </a>
-                <!-- HORS DU COLLAPSE, bouton home -->
-            
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <!--Accordéon-->
-                  <span class="navbar-toggler-icon"></span>
-            
-                </button>
-            
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-                  <!-- boutons qui collapsent lorsque navbar réduite -->
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="https://chrhanser.github.io/#presentation"> PRÉSENTATION </a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://chrhanser.github.io/#competences"> COMPÉTENCES </a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://chrhanser.github.io/#projets"> PROJETS </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact"> CONTACT </a></li>
-                  </ul>
-                </div> <!-- fin collapse -->
-              </nav>
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark navbar-custom">
+        <a class="navbar-brand" href="#"> HOME </a>
+        <!-- ^ HORS DU COLLAPSE, bouton home -->
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!--Accordéon-->
+          <span class="navbar-toggler-icon"></span>
+    
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+          <!-- boutons qui collapsent lorsque navbar réduite -->
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="https://chrhanser.github.io/#presentation"> PRÉSENTATION </a></li>
+              <li class="nav-item"><a class="nav-link" href="https://chrhanser.github.io/#competences"> COMPÉTENCES </a></li>
+              <li class="nav-item"><a class="nav-link" href="https://chrhanser.github.io/#projets"> PROJETS </a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact"> CONTACT </a></li>
+          </ul>
+        </div> <!-- fin collapse -->
+      </nav>
 
 
     <h1> Page non trouvée !</h1>
@@ -192,15 +188,11 @@ h1{
   background-color: #444444;
 }
 
-.navbar .navbar-nav .nav-item .nav-link ,.navbar .navbar-brand{
-  color: #e0c134;
-  background-color: rgb(63, 63, 63);
-  margin-left: 3em;
-  width: 15rem;
-  font-weight: bold;
-  text-align: center;
-  border: 1px solid rgb(105, 105, 105);
-  border-radius: 12px;
+#navbarSupportedContent .navbar-nav{
+display: flex;
+flex: 1;
+margin: auto;
+justify-content: space-around;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-brand:hover{
@@ -212,6 +204,14 @@ h1{
   padding: .5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.navbar-dark a.navbar-brand{
+  color:#e0c134;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color:#DEDEDE;
 }
 
 .FOOTER{

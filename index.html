@@ -17,7 +17,7 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"></script> 
 
@@ -36,7 +36,8 @@
     <img src="img/meduses_1920x916v2.jpg" alt="Photo de Christophe Hanser avec un aquarium de méduses derrière">
     <img src="img/pont_1920x916v2.jpg" alt="Photo de Christophe Hanser avec un fleuve et des falaises en fond">
   </div>
-  <img src="img/ville_1920x916v2.jpg" alt="Photo de Christophe Hanser à Séoul" class="imgHeaderFixe">
+
+<img src="img/ville_1920x916v2.jpg" alt="Photo de Christophe Hanser à Séoul" class="imgHeaderFixe"> 
 
 
 
@@ -64,26 +65,24 @@
     </div> <!-- fin collapse -->
   </nav>
 
-
   <!-- fin navbar , début présentation-->
 
   <div class="container rounded presentationMain" id="presentation">
-    <h2 class="presentation noPrint">Bonjour !</h2>
-    <p class="presentation lead noPrint"> <strong>Qui suis-je?</strong></p>
+    <p class="presentation noPrint majeur">Bonjour !</p>
+    <p class="presentation lead noPrint big"> <strong>Qui suis-je?</strong></p>
     <p class="presentation lead noPrint">Moi, c'est <strong>Christophe Hanser</strong>, 24 ans, étudiant en informatique. J'habite <strong>Bordeaux</strong>, j'aime le
       sport, dessiner et voyager.</p>
       <p class="print lead print">CV Christophe Hanser ~ 24 ans <br> Ville de résidence: Bordeaux <br> Mail : christophehanser@gmail.com</p>
-      <p class="presentation lead noPrint"> <strong>Etudiant?</strong></p>
+      <p class="presentation lead noPrint big"> <strong>Etudiant?</strong></p>
       <p class="presentation lead">Avant l'informatique j'étais en immobilier, mais j'ai choisi de me réorienter.<br>
       Cela m'aura toutefois permis de développer de nombreuses compétences, telles que le sens du relationnel, la
       capacité à travailler en équipe,
       à analyser les besoins des clients et à réaliser des projets. De plus, cela m’aura permis d’acquérir des bases
       juridiques et économiques.</p>
-      <p class="presentation lead noPrint"><strong>Et maintenant?</strong></p>
+      <p class="presentation lead noPrint big"><strong>Et maintenant?</strong></p>
       <p class="presentation lead">Désormais étudiant à l'IUT d'informatique de Bordeaux, j'étends mon expérience et mon savoir-faire en informatique
       aussi bien dans le developpement web que logiciel. Ce site est pour moi un moyen de me faire connaître et d'exposer mes compétences, le tout en faisant office de CV interactif.
       Si vous êtes une entreprise, sachez que je suis en recherche active de stage.</p>
-
     </div>
 
   <div class="presentationPrint">
@@ -94,10 +93,10 @@
   <div class="competences" id="competences" >
     <table>
       <caption>
-        <h2> Compétences </h2>
+        <p class="majeur"> Compétences </p>
       </caption>
       <tr>
-        <th scope="row"> <p><img src="img/enviro.png" alt="pictogramme-environnemnts">     Environnements: </p></th>
+        <th scope="row"> <p><img src="img/enviro.png" alt="pictogramme-environnements">     Environnements: </p></th>
         <td> UNIX </td>
         <td>Windows</td>
         <td> </td>
@@ -159,7 +158,7 @@
   <div class="diplomes">
     <table>
       <caption>
-        <h2> Diplômes </h2>
+        <p class="majeur"> Diplômes </p>
       </caption>
       <tr>
         <td></td>
@@ -193,8 +192,8 @@
 
     <div class="row">
 
-      <div class="col-md-3 bitebite">
-        <div class="row"> <h2>Projets réalisés</h2> </div>
+      <div class="col-md-3">
+        <div class="row"> <p class="majeur">Projets réalisés</p> </div>
         <div class="row"> <p><img src="img/jeuVie.gif" class="shadow-lg rounded" alt="jeu-de-la-vie-processing">"Jeu de la vie" codé sur Processing</p> </div>
       </div>
 
@@ -282,15 +281,15 @@
       </div>
 
       <div class="col-md-4 milieu">
-        <h2>Contactez-moi !</h2>
+        <p class="majeur">Contactez-moi !</p>
         <form>
           <div class="form-group ">
+              <label for="Nom">Nom</label>
             <input type="text" id="Nom" class="form-control" placeholder="Votre nom">
-            <label for="Nom">Nom</label>
           </div>
           <div class="form-group">
+              <label for="E-mail">E-mail</label>
             <input type="text" class="form-control" id="E-mail" placeholder="Votre mail" aria-describedby="SousMail">
-            <label for="E-mail">E-mail</label>
             <small id="SousMail" class="form-text text-muted">Votre mail ne sera jamais partagé, transmis ou
               vendu</small>
           </div>
