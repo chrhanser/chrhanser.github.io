@@ -20,6 +20,11 @@ p.majeur{
   font-weight: bold;  
 }
 
+@media screen and (max-width:900px) {
+  .competences, .diplomes{
+    display: none;
+  }
+}
 /*HEADER*/
 
 .imgHeaderFixe{
@@ -110,7 +115,7 @@ justify-content: space-around;
   padding-top: 30px;
   word-wrap: break-word;
   padding-bottom: 20px;
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 p.presentation{
