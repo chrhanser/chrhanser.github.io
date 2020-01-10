@@ -3,7 +3,7 @@ STYLES GLOBAUX ( TITRE-PAGE, COULEUR DE FOND, ETC.)
 */
 
 :root {
-  --time : 12s;
+  --time : 4s;
 }
 
 html{
@@ -36,11 +36,11 @@ h2{
   25% {
     opacity:0;
   }
-  70% {
+  80% {
     opacity: 0;
   }
-  94% {
-    opacity:0;
+  90% {
+    opacity:1;
   }
   100% {
     opacity:1;
