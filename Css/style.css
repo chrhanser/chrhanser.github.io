@@ -1,11 +1,7 @@
 /*
 STYLES GLOBAUX ( TITRE-PAGE, COULEUR DE FOND, ETC.)
 */
-/*
-:root {
-  --time : 4s;
-}
-*/
+
 html{
   scroll-behavior: smooth;
 }
@@ -70,19 +66,19 @@ p.majeur{
   animation-name: AnimDuHeader;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 16s;/*var(--time) ; */
+  animation-duration: 16s;
   position:absolute;
   width: 100%;
 }
 
 .HEADER img:nth-of-type(1) {
-  animation-delay: 12s; /*calc(var(--time) /4 * 3);*/
+  animation-delay: 12s; 
 }
 .HEADER img:nth-of-type(2) {
-  animation-delay: 8s;   /*calc(var(--time) /4 * 2); */
+  animation-delay: 8s;  
 }
 .HEADER img:nth-of-type(3) {
-  animation-delay: 4s;  /*calc(var(--time) /4) ; */
+  animation-delay: 4s; 
 } 
 /* FIN HEADER */
 
@@ -270,7 +266,7 @@ padding: 3%;
 }
 
 .diplomes table tr a{
-  color: white;
+  color: #14393E;
   font-size: medium;
 }
 
@@ -322,11 +318,23 @@ padding: 3%;
   width: 100%;
 }
 
+.FOOTER .btn-default{
+  color:#e0c134;
+  background-color: rgb(63, 63, 63);
+  border-color: rgb(105, 105, 105);
+  width: 15rem;
+  font-weight: bold;
+  margin-bottom:1rem;
+}
+
+.FOOTER .form-control{
+  background-color: #e4df84;
+}
+
 .gauche{
   display: flex;
   justify-content: center;
 }
-
 
 .modal-open {
   overflow-y: auto;
@@ -339,19 +347,6 @@ padding-right: 1rem;
 
 .FOOTER .milieu p.majeur{
   font-size: 2rem;
-}
-
-.FOOTER .btn-default{
-  color:#e0c134;
-  background-color: rgb(63, 63, 63);
-  border-color: rgb(105, 105, 105);
-  width: 15rem;
-  font-weight: bold;
-  margin-bottom:1rem;
-}
-
-.FOOTER .form-control{
-  background-color: #e4df84;
 }
 
 .FOOTER .droite, .FOOTER .gauche{
