@@ -34,11 +34,10 @@ p.majeur{
     display:unset !important;
   }
 
-
+  .presentationMain p.presentation{
+  line-height: 150%;
+  }
 }
-
-
-
 
 /*HEADER*/
 
