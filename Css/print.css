@@ -2,7 +2,7 @@ body{
     background: white;
 }
 
-p, h1, h2{
+p{
     color:black;
 }
 
@@ -17,7 +17,11 @@ p, h1, h2{
 }
 
 .diplomes table tr th, .diplomes table tr td, .competences table tr th, .competences table tr td{
-font-size: 1rem;
+    font-size: 1rem;
+}
+
+.diplomes table caption, .competences table caption{
+    font-size: 1.5rem;
 }
 
 .competences td, .diplomes td, .diplomes th, .diplomes table tr th.obtention{
